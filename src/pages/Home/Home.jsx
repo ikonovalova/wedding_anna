@@ -1,0 +1,58 @@
+import React from 'react';
+import './styles.css';
+
+const Home = () => {
+    return (
+        <div className="home-page">
+            <div className="wedding-header">
+                <h1 className="couple-names">Степан <span className="amp">&</span> Анна</h1>
+                <div className="wedding-date">Свадьба 05-07.09.2025</div>
+            </div>
+
+            <div className="info-card">
+                <h2 className="info-title">Регистрация в ЗАГС</h2>
+                <p className="info-text">
+                    <strong>Дата:</strong> 05.09.2025<br />
+                    <strong>Время:</strong> 19:00<br />
+                    <strong>Место:</strong> Дворец бракосочетания №1<br />
+                    <strong>Адрес:</strong> Английская наб., 28
+                </p>
+            </div>
+
+            <div className="info-card">
+                <h2 className="info-title">Банкет</h2>
+                <p className="info-text">
+                    <strong>Дата:</strong> 07.09.2025<br />
+                    <strong>Время:</strong> 15:00<br />
+                    <strong>Место:</strong> Площадка Forest Symphony<br />
+                    <strong>Трансфер:</strong> 13:00 (место будет позже)<br />
+                    <strong>Обратный трансфер:</strong> XX:XX (уточняется)
+                </p>
+            </div>
+
+            <div className="info-card">
+                <h2 className="info-title">Дресс-код</h2>
+                <p className="info-text">Вечерние наряды в пастельных тонах</p>
+            </div>
+
+            <div className="info-card attention">
+                <h2 className="info-title">Важная информация</h2>
+                <p className="info-text">
+                    К сожалению, на мероприятии не будет аниматора.
+                    А также мероприятие будет за городом и долгое,
+                    детям будет сложно.
+                </p>
+            </div>
+
+            <div className="info-card contacts">
+                <h2 className="info-title">Контакты организаторов</h2>
+                <p className="info-text">
+                    <strong>Ведущий:</strong> +7 (XXX) XXX-XX-XX<br />
+                    <strong>Координатор:</strong> +7 (XXX) XXX-XX-XX
+                </p>
+            </div>
+        </div>
+    );
+};
+
+export default Home;

@@ -1,0 +1,136 @@
+.schedule-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px 60px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.wedding-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.couple-names {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 80px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #d4a373, #a5a58d);
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.event-time {
+    position: absolute;
+    left: -80px;
+    top: 5px;
+    width: 70px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #d4a373;
+}
+
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid #d4a373;
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+.event-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.timeline-event::after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #d4a373;
+    z-index: 1;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.timeline-event {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.timeline-event:nth-child(1) { animation-delay: 0.1s; }
+.timeline-event:nth-child(2) { animation-delay: 0.3s; }
+.timeline-event:nth-child(3) { animation-delay: 0.5s; }
+.timeline-event:nth-child(4) { animation-delay: 0.7s; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .schedule-page {
+        padding: 80px 15px 40px;
+    }
+
+    .couple-names {
+        font-size: 2rem;
+    }
+
+    .timeline-container {
+        padding-left: 60px;
+    }
+
+    .timeline-container::before {
+        left: 30px;
+    }
+
+    .event-time {
+        left: -60px;
+        width: 50px;
+        font-size: 0.8rem;
+    }
+
+    .event-card {
+        padding: 20px;
+    }
+
+    .timeline-event::after {
+        left: 25px;
+    }
+}
