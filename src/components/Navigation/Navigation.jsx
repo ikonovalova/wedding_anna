@@ -42,10 +42,10 @@ const Navigation = () => {
                     </li>
                     <li className="nav-item">
                         <NavLink
-                            to="/form"
+                             to="/gallery"
                             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
                         >
-                            Анкета
+                            Галерея
                         </NavLink>
                     </li>
                 </ul>

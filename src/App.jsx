@@ -8,7 +8,7 @@
 // import FAQ from './pages/FAQ/FAQ.jsx';
 // import Schedule from './pages/Plan.jsx';
 // import About from './pages/About.jsx';
-// import Form from './pages/Form.jsx';
+// import Gallery from './pages/Gallery.jsx';
 //
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -22,7 +22,7 @@
 //                              <Route path="faq" element={<FAQ />} />
 //                              <Route path="schedule" element={<Schedule />} />
 //                              <Route path="about" element={<About />} />
-//                              <Route path="form" element={<Form />} />
+//                              <Route path="gallery" element={<Gallery />} />
 //                          </Route>
 //                      </Routes>
 //       {/*<div>*/}
@@ -58,7 +58,7 @@ import Home from './pages/Home/Home.jsx';
 import Faq from './pages/FAQ/FAQ.jsx';
 import Schedule from './pages/Plan/Plan.jsx';
 import About from './pages/About';
-import Form from './pages/Form';
+import Gallery from './pages/Gallery.jsx';
 
 function App() {
     return (
@@ -68,7 +68,7 @@ function App() {
                 <Route path="faq" element={<Faq />} />
                 <Route path="schedule" element={<Schedule />} />
                 <Route path="about" element={<About />} />
-                <Route path="form" element={<Form />} />
+                <Route path="gallery" element={<Gallery />} />
             </Route>
         </Routes>
     );
