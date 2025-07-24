@@ -18,7 +18,7 @@ const Plan = () => {
                 </div>
 
                 <div className="timeline-event">
-                    <div className="event-time">15:00 – 16:30</div>
+                    <div className="event-time">15:00 – 15:30</div>
                     <div className="event-card">
                         <h3 className="event-title">ВСТРЕЧА ГОСТЕЙ / ФУРШЕТ</h3>
                         <p className="event-description">Легкие закуски и напитки в неформальной обстановке</p>
@@ -26,16 +26,16 @@ const Plan = () => {
                 </div>
 
                 <div className="timeline-event">
-                    <div className="event-time">23:00</div>
+                    <div className="event-time">22:00 - 23:00</div>
                     <div className="event-card">
                         <h3 className="event-title">ОКОНЧАНИЕ ОФИЦИАЛЬНОЙ ЧАСТИ</h3>
                     </div>
                 </div>
 
                 <div className="timeline-event">
-                    <div className="event-time">23:00</div>
+                    <div className="event-time">22:00 - 23:00</div>
                     <div className="event-card">
-                        <h3 className="event-title">ТРАНСФЕР В СПБ</h3>
+                        <h3 className="event-title">ОБРАТНЫЙ ТРАНСФЕР В СПБ</h3>
                         <p className="event-description">Организованный возврат в Санкт-Петербург</p>
                     </div>
                 </div>
