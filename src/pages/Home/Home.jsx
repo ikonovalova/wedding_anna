@@ -1,57 +1,88 @@
 import React from 'react';
-import './styles.css';
+import {
+    HomePage,
+    WeddingHeader,
+    CoupleNames,
+    Amp,
+    WeddingDate,
+    InfoCard,
+    InfoTitle,
+    InfoText,
+    MapContainer
+} from './styles';
 
 const Home = () => {
     return (
-        <div className="home-page">
-            <div className="wedding-header">
-                <h1 className="couple-names">Степан <span className="amp">&</span> Анна</h1>
-                <div className="wedding-date">Свадьба 05-07.09.2025</div>
-            </div>
+        <HomePage>
+            <WeddingHeader>
+                <CoupleNames>Степан <Amp>&</Amp> Анна</CoupleNames>
+                <WeddingDate>Свадьба 05-07.09.2025</WeddingDate>
+            </WeddingHeader>
 
-            <div className="info-card">
-                <h2 className="info-title">Регистрация в ЗАГС</h2>
-                <p className="info-text">
+            <InfoCard>
+                <InfoTitle>Регистрация в ЗАГС</InfoTitle>
+                <InfoText>
                     <strong>Дата:</strong> 05.09.2025<br />
                     <strong>Время:</strong> 19:00<br />
                     <strong>Место:</strong> Дворец бракосочетания №1<br />
                     <strong>Адрес:</strong> Английская наб., 28
-                </p>
-            </div>
+                </InfoText>
+                <MapContainer>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=30.293945%2C59.933918&z=16&mode=search&text=%D0%94%D0%B2%D0%BE%D1%80%D0%B5%D1%86%20%D0%B1%D1%80%D0%B0%D0%BA%D0%BE%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%E2%84%961&sll=30.293945%2C59.933918&sspn=0.030041%2C0.008604"
+                        width="100%"
+                        height="400"
+                        frameBorder="0"
+                        allowFullScreen={true}
+                        style={{ position: 'relative' }}
+                        title="Дворец бракосочетания №1"
+                    ></iframe>
+                </MapContainer>
+            </InfoCard>
 
-            <div className="info-card">
-                <h2 className="info-title">Банкет</h2>
-                <p className="info-text">
+            <InfoCard>
+                <InfoTitle>Банкет</InfoTitle>
+                <InfoText>
                     <strong>Дата:</strong> 07.09.2025<br />
                     <strong>Время:</strong> 15:00<br />
                     <strong>Место:</strong> Площадка Forest Symphony<br />
                     <strong>Трансфер:</strong> 13:00 (место будет позже)<br />
-                    <strong>Обратный трансфер:</strong>  22:00-23:00
-                </p>
-            </div>
+                    <strong>Обратный трансфер:</strong> 22:00-23:00
+                </InfoText>
+                <MapContainer>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=30.360731%2C60.164041&z=15&mode=search&text=Forest%20Symphony&sll=30.360731%2C60.164041&sspn=0.01%2C0.01&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcyNjI5MhJI0KDQvtGB0YHQuNGPLCDQkdCw0YjQutC-0YDQvtCz0L7RgdGC0LjRjywg0KTRgNCw0L3RhtC40Y8g0KHQu9C-0LzQtdC90YLQsNGA0Ys%2C&z=15"
+                        width="100%"
+                        height="400"
+                        frameBorder="0"
+                        allowFullScreen
+                        title="Площадка Forest Symphony"
+                    ></iframe>
+                </MapContainer>
+            </InfoCard>
 
-            <div className="info-card">
-                <h2 className="info-title">Дресс-код</h2>
-                <p className="info-text">Вечерние наряды в пастельных тонах</p>
-            </div>
+            <InfoCard>
+                <InfoTitle>Дресс-код</InfoTitle>
+                <InfoText>Вечерние наряды в пастельных тонах</InfoText>
+            </InfoCard>
 
-            <div className="info-card attention">
-                <h2 className="info-title">Важная информация</h2>
-                <p className="info-text">
+            <InfoCard attention>
+                <InfoTitle>Важная информация</InfoTitle>
+                <InfoText>
                     1) К сожалению, на мероприятии не будет аниматора и детской зоны.
                     А также мероприятие планируется быть за городом и долгое.
-                    2) Мы бы хотели попросить воздержаться от призывов "Горько". Нам будет неуютно и некомфортно от этой традиции.
-                </p>
-            </div>
+                    <br /> 2) Мы бы хотели попросить воздержаться от призывов "Горько". Нам будет неуютно и некомфортно от этой традиции.
+                </InfoText>
+            </InfoCard>
 
-            <div className="info-card contacts">
-                <h2 className="info-title">Контакты организаторов</h2>
-                <p className="info-text">
+            <InfoCard contacts>
+                <InfoTitle>Контакты организаторов</InfoTitle>
+                <InfoText>
                     <strong>Ведущий:</strong> +7 (XXX) XXX-XX-XX<br />
                     <strong>Координатор:</strong> +7 (XXX) XXX-XX-XX
-                </p>
-            </div>
-        </div>
+                </InfoText>
+            </InfoCard>
+        </HomePage>
     );
 };
 

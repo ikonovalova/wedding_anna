@@ -1,56 +1,51 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './styles.css';
+import React, { useState } from 'react';
+import * as S from './styles';
 
 const Navigation = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <nav className="main-nav">
-            <div className="nav-container">
-                <div className="nav-logo">Степан и Анна</div>
-                <ul className="nav-menu">
-                    <li className="nav-item">
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-                        >
-                            Главная
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/schedule"
-                            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-                        >
-                            Расписание
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/faq"
-                            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-                        >
-                            FAQ
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/about"
-                            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-                        >
-                            О нас
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                             to="/gallery"
-                            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-                        >
-                            Галерея
-                        </NavLink>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <S.NavContainer>
+            <S.NavLogo>Степан и Анна</S.NavLogo>
+
+            <S.BurgerMenu onClick={toggleMenu} isOpen={isMenuOpen}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </S.BurgerMenu>
+
+            <S.NavMenu isOpen={isMenuOpen}>
+                <S.NavItem>
+                    <S.NavLinkStyle to="/" end>
+                        Главная
+                    </S.NavLinkStyle>
+                </S.NavItem>
+                <S.NavItem>
+                    <S.NavLinkStyle to="/schedule">
+                        Расписание
+                    </S.NavLinkStyle>
+                </S.NavItem>
+                <S.NavItem>
+                    <S.NavLinkStyle to="/faq">
+                        FAQ
+                    </S.NavLinkStyle>
+                </S.NavItem>
+                <S.NavItem>
+                    <S.NavLinkStyle to="/about">
+                        О нас
+                    </S.NavLinkStyle>
+                </S.NavItem>
+                <S.NavItem>
+                    <S.NavLinkStyle to="/gallery">
+                        Галерея
+                    </S.NavLinkStyle>
+                </S.NavItem>
+            </S.NavMenu>
+        </S.NavContainer>
     );
 };
 

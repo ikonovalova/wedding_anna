@@ -1,46 +1,56 @@
 import React from 'react';
-import './styles.css';
+import {
+    SchedulePage,
+    WeddingHeader,
+    CoupleNames,
+    TimelineContainer,
+    TimelineEvent,
+    EventTime,
+    EventCard,
+    EventTitle,
+    EventDescription
+} from './styles';
 
 const Plan = () => {
     return (
-        <div className="schedule-page">
-            <div className="wedding-header">
-                <h1 className="couple-names">План мероприятия</h1>
-            </div>
+        <SchedulePage>
+            <WeddingHeader>
+                <CoupleNames>План мероприятия</CoupleNames>
+            </WeddingHeader>
 
-            <div className="timeline-container">
-                <div className="timeline-event">
-                    <div className="event-time">13:00 - 15:00</div>
-                    <div className="event-card">
-                        <h3 className="event-title">ТРАНСФЕР ИЗ СПБ НА ПЛОЩАДКУ</h3>
-                        <p className="event-description">Сбор гостей и организованный трансфер на площадку</p>
-                    </div>
-                </div>
+            <TimelineContainer>
+                <TimelineEvent>
+                    <EventTime>13:00 - 15:00</EventTime>
+                    <EventCard>
+                        <EventTitle>ТРАНСФЕР ИЗ СПБ НА ПЛОЩАДКУ</EventTitle>
+                        <EventDescription>Сбор гостей и организованный трансфер на площадку</EventDescription>
+                    </EventCard>
+                </TimelineEvent>
 
-                <div className="timeline-event">
-                    <div className="event-time">15:00 – 15:30</div>
-                    <div className="event-card">
-                        <h3 className="event-title">ВСТРЕЧА ГОСТЕЙ / ФУРШЕТ</h3>
-                        <p className="event-description">Легкие закуски и напитки в неформальной обстановке</p>
-                    </div>
-                </div>
+                <TimelineEvent>
+                    <EventTime>15:00 – 15:30</EventTime>
+                    <EventCard>
+                        <EventTitle>ВСТРЕЧА ГОСТЕЙ / ФУРШЕТ</EventTitle>
+                        <EventDescription>Легкие закуски и напитки в неформальной обстановке</EventDescription>
+                    </EventCard>
+                </TimelineEvent>
 
-                <div className="timeline-event">
-                    <div className="event-time">22:00 - 23:00</div>
-                    <div className="event-card">
-                        <h3 className="event-title">ОКОНЧАНИЕ ОФИЦИАЛЬНОЙ ЧАСТИ</h3>
-                    </div>
-                </div>
+                <TimelineEvent>
+                    <EventTime>22:00 - 23:00</EventTime>
+                    <EventCard>
+                        <EventTitle>ОКОНЧАНИЕ ОФИЦИАЛЬНОЙ ЧАСТИ</EventTitle>
+                    </EventCard>
+                </TimelineEvent>
 
-                <div className="timeline-event">
-                    <div className="event-time">22:00 - 23:00</div>
-                    <div className="event-card">
-                        <h3 className="event-title">ОБРАТНЫЙ ТРАНСФЕР В СПБ</h3>
-                        <p className="event-description">Организованный возврат в Санкт-Петербург</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <TimelineEvent>
+                    <EventTime>22:00 - 23:00</EventTime>
+                    <EventCard>
+                        <EventTitle>ОБРАТНЫЙ ТРАНСФЕР В СПБ</EventTitle>
+                        <EventDescription>Организованный возврат в Санкт-Петербург</EventDescription>
+                    </EventCard>
+                </TimelineEvent>
+            </TimelineContainer>
+        </SchedulePage>
     );
 };
 
