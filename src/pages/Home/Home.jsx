@@ -6,7 +6,7 @@ const Home = () => {
         <div className="home-page">
             <div className="wedding-header">
                 <h1 className="couple-names">Степан <span className="amp">&</span> Анна</h1>
-                <div className="wedding-date">Свадьба 05-07.09.2025</div>
+                <div className="wedding-date">Свадьба 05 & 07.09.2025</div>
             </div>
 
             <div className="info-card">
@@ -15,7 +15,7 @@ const Home = () => {
                     <strong>Дата:</strong> 05.09.2025<br />
                     <strong>Время:</strong> 19:00<br />
                     <strong>Место:</strong> Дворец бракосочетания №1<br />
-                    <strong>Адрес:</strong> Английская наб., 28
+                    <strong>Адрес:</strong> Санкт-Петербург, Английская наб., 28
                 </p>
             </div>
 
@@ -25,6 +25,7 @@ const Home = () => {
                     <strong>Дата:</strong> 07.09.2025<br />
                     <strong>Время:</strong> 15:00<br />
                     <strong>Место:</strong> Площадка Forest Symphony<br />
+                    <strong>Адрес:</strong> Ленинградская область, 31 км Приозерского шоссе <br />
                     <strong>Трансфер:</strong> 13:00 (место будет позже)<br />
                     <strong>Обратный трансфер:</strong>  22:00-23:00
                 </p>
