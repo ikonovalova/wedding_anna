@@ -16,7 +16,7 @@ const Home = () => {
         <HomePage>
             <WeddingHeader>
                 <CoupleNames>Степан <Amp>&</Amp> Анна</CoupleNames>
-                <WeddingDate>Свадьба 05-07.09.2025</WeddingDate>
+                <WeddingDate>Свадьба 05 & 07.09.2025</WeddingDate>
             </WeddingHeader>
 
             <InfoCard>
@@ -25,7 +25,7 @@ const Home = () => {
                     <strong>Дата:</strong> 05.09.2025<br />
                     <strong>Время:</strong> 19:00<br />
                     <strong>Место:</strong> Дворец бракосочетания №1<br />
-                    <strong>Адрес:</strong> Английская наб., 28
+                    <strong>Адрес:</strong> Санкт-Петербург, Английская наб., 28
                 </InfoText>
                 <MapContainer>
                     <iframe
@@ -46,6 +46,7 @@ const Home = () => {
                     <strong>Дата:</strong> 07.09.2025<br />
                     <strong>Время:</strong> 15:00<br />
                     <strong>Место:</strong> Площадка Forest Symphony<br />
+                    <strong>Адрес:</strong> Ленинградская область, 31 км Приозерского шоссе <br />
                     <strong>Трансфер:</strong> 13:00 (место будет позже)<br />
                     <strong>Обратный трансфер:</strong> 22:00-23:00
                 </InfoText>
@@ -72,6 +73,7 @@ const Home = () => {
                     1) К сожалению, на мероприятии не будет аниматора и детской зоны.
                     А также мероприятие планируется быть за городом и долгое.
                     <br /> 2) Мы бы хотели попросить воздержаться от призывов "Горько". Нам будет неуютно и некомфортно от этой традиции.
+                     <br /> 3) Нам важно предупредить заранее, что на территории свадебной площадки возможны перебои с мобильным интернетом. Это может затруднить вызов такси через приложения в конце вечера.
                 </InfoText>
             </InfoCard>
 
@@ -79,7 +81,7 @@ const Home = () => {
                 <InfoTitle>Контакты организаторов</InfoTitle>
                 <InfoText>
                     <strong>Ведущий:</strong> +7 (XXX) XXX-XX-XX<br />
-                    <strong>Координатор:</strong> +7 (XXX) XXX-XX-XX
+                    <strong>Координатор:</strong> +7 (921) 918-22-93
                 </InfoText>
             </InfoCard>
         </HomePage>
