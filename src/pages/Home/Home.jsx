@@ -8,8 +8,9 @@ import {
     InfoCard,
     InfoTitle,
     InfoText,
-    MapContainer
+    MapContainer, ContactPhoto, ContactLinks, TelegramLink, TelegramIcon, PhoneLink, ContactContainer
 } from './styles';
+import coordinatorPhoto from '../../assets/coord.jpg';
 
 const Home = () => {
     return (
@@ -81,7 +82,21 @@ const Home = () => {
                 <InfoTitle>Контакты организаторов</InfoTitle>
                 <InfoText>
                     <strong>Ведущий:</strong> +7 (XXX) XXX-XX-XX<br />
-                    <strong>Координатор:</strong> +7 (921) 918-22-93
+                    <ContactContainer>
+
+                    Координатор:
+                        <ContactPhoto src={coordinatorPhoto} alt="Координатор" />
+                    <ContactLinks>
+                        <TelegramLink href="https://t.me/svet_org" target="_blank" rel="noopener noreferrer">
+                            <TelegramIcon />
+                            Телеграм: @svet_org
+                        </TelegramLink>
+                        <PhoneLink href="tel:+79219182293">
+                            +7 (921) 918-22-93
+                        </PhoneLink>
+                    </ContactLinks>
+                    </ContactContainer>
+
                 </InfoText>
             </InfoCard>
         </HomePage>

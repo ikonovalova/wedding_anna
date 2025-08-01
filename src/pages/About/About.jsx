@@ -1,5 +1,6 @@
 import React from 'react';
 import * as S from './styles';
+import SliderImg from "../../components/SliderImg/SliderImg.jsx";
 
 const About = () => {
     return (
@@ -14,6 +15,8 @@ const About = () => {
                     И вот уже 10 лет идем по жизни вместе.
                 </S.HeroText>
             </S.HeroSection>
+
+            <SliderImg />
 
             <S.ContentSection>
                 <S.Section>

@@ -15,7 +15,8 @@ export const HeroSection = styled.div`
     margin-top: 40px;
 
     @media (max-width: 768px) {
-        padding: 60px 15px 40px;
+        padding: 30px 15px 40px;
+        margin-bottom: 20px;
     }
 `;
 
@@ -32,6 +33,10 @@ export const HeroText = styled.p`
     
     @media (max-width: 768px) {
         font-size: 1.1rem;
+        
+        &:not(:last-of-type) {
+            margin-bottom: 8px;
+        }
     }
 `;
 
@@ -63,6 +68,7 @@ export const SectionTitle = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
+      margin-bottom: 8px;
   }
 `;
 
@@ -89,7 +95,7 @@ export const TextBlock = styled.div`
     }
 
     @media (max-width: 768px) {
-        padding: 20px;
+        padding: 6px;
         font-size: 1rem;
     }
 `;

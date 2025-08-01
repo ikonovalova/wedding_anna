@@ -6,10 +6,11 @@ export const NavContainer = styled.nav`
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    //position: fixed;
+    //top: 0;
+    //left: 0;
+    //right: 0;
+    position: relative;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -44,7 +45,7 @@ export const NavMenu = styled.ul`
 
     @media (max-width: 768px) {
         position: fixed;
-        top: 70px;
+        top: 63px;
         left: 0;
         right: 0;
         background-color: rgba(255, 255, 255, 0.98);

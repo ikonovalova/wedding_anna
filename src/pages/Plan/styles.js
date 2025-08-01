@@ -47,10 +47,12 @@ padding-left: 80px;
 }
 
 @media (max-width: 768px) {
-    padding-left: 100px;
-
+    //padding-left: 100px;
+    padding-left: 0;
+    
     &::before {
-        left: 40px;
+        //left: 40px;
+        display: none;
     }
 }
 `;
@@ -70,6 +72,7 @@ animation: ${fadeIn} 0.6s ease-out forwards;
 &:nth-child(4) { animation-delay: 0.7s; }
 
 @media (max-width: 768px) {
+    flex-direction: column;
     &::after {
         left: -55px;
     }

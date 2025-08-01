@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import * as S from './styles';
+import { useLocation } from 'react-router-dom';
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [location]);
 
     return (
         <S.NavContainer>
