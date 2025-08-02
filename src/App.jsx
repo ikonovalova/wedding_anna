@@ -5,7 +5,7 @@ import Home from './pages/Home/Home.jsx';
 import Faq from './pages/FAQ/FAQ.jsx';
 import Schedule from './pages/Plan/Plan.jsx';
 import About from './pages/About/About.jsx';
-import Gallery from './pages/Gallery.jsx';
+import Gallery from './pages/Gallery/Gallery.jsx';
 
 function App() {
     return (

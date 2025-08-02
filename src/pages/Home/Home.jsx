@@ -8,9 +8,13 @@ import {
     InfoCard,
     InfoTitle,
     InfoText,
-    MapContainer, ContactPhoto, ContactLinks, TelegramLink, TelegramIcon, PhoneLink, ContactContainer
+    MapContainer, ContactPhoto, ContactLinks, TelegramLink, TelegramIcon, PhoneLink, ContactContainer, ContactListContainer,
+    DressCodeImage
 } from './styles';
-import coordinatorPhoto from '../../assets/coord.jpg';
+import coordinatorPhoto from '../../assets/coord_small.jpg';
+import toastmasterPhoto from '../../assets/toastmaster.jpg';
+import dresscodePhoto from '../../assets/dresscode.jpg';
+
 
 const Home = () => {
     return (
@@ -65,7 +69,9 @@ const Home = () => {
 
             <InfoCard>
                 <InfoTitle>Дресс-код</InfoTitle>
-                <InfoText>Вечерние наряды в пастельных тонах</InfoText>
+                <InfoText>Наш праздник пройдёт в духе уютной осени, и мы будем безумно рады, если вы поддержите эту атмосферу в своих нарядах. Дресс-код: нарядная одежда в тёплой палитре — бежевый, коричневый, тёмно-шоколадный, чёрный или белый.
+                     <DressCodeImage src={dresscodePhoto} alt="Координатор" />
+                </InfoText>
             </InfoCard>
 
             <InfoCard attention>
@@ -73,30 +79,45 @@ const Home = () => {
                 <InfoText>
                     1) К сожалению, на мероприятии не будет аниматора и детской зоны.
                     А также мероприятие планируется быть за городом и долгое.
-                    <br /> 2) Мы бы хотели попросить воздержаться от призывов "Горько". Нам будет неуютно и некомфортно от этой традиции.
-                     <br /> 3) Нам важно предупредить заранее, что на территории свадебной площадки возможны перебои с мобильным интернетом. Это может затруднить вызов такси через приложения в конце вечера.
+                    <br /><br /> 2) Мы бы хотели попросить воздержаться от призывов "Горько". Нам будет неуютно и некомфортно от этой традиции.
+                     <br /><br /> 3) Нам важно предупредить заранее, что на территории свадебной площадки возможны перебои с мобильным интернетом. Это может затруднить вызов такси через приложения в конце вечера.
                 </InfoText>
             </InfoCard>
 
             <InfoCard contacts>
                 <InfoTitle>Контакты организаторов</InfoTitle>
                 <InfoText>
-                    <strong>Ведущий:</strong> +7 (XXX) XXX-XX-XX<br />
-                    <ContactContainer>
+                     Вы можете обратиться с вопросом о особенном поздравлении к ведущему. По всем другим вопросам
+                        в день ресторана 7 сентября вы можете обратиться к координатору.
+                    <ContactListContainer>
+                        <ContactContainer>
+                                <ContactPhoto src={toastmasterPhoto} alt="Координатор" />
+                                Ведущий Олег
+                            <ContactLinks>
+                                <TelegramLink href="https://t.me/olegtalalay" target="_blank" rel="noopener noreferrer">
+                                    <TelegramIcon />
+                                    Телеграм: @olegtalalay
+                                </TelegramLink>
+                                <PhoneLink href="tel:+79215510567">
+                                    +7 (921) 551-05-67
+                                </PhoneLink>
+                            </ContactLinks>
+                        </ContactContainer>
 
-                    Координатор:
+                        <ContactContainer>
                         <ContactPhoto src={coordinatorPhoto} alt="Координатор" />
-                    <ContactLinks>
-                        <TelegramLink href="https://t.me/svet_org" target="_blank" rel="noopener noreferrer">
-                            <TelegramIcon />
-                            Телеграм: @svet_org
-                        </TelegramLink>
-                        <PhoneLink href="tel:+79219182293">
-                            +7 (921) 918-22-93
-                        </PhoneLink>
-                    </ContactLinks>
-                    </ContactContainer>
-
+                        Координатор Светлана
+                        <ContactLinks>
+                            <TelegramLink href="https://t.me/svet_org" target="_blank" rel="noopener noreferrer">
+                                <TelegramIcon />
+                                Телеграм: @svet_org
+                            </TelegramLink>
+                            <PhoneLink href="tel:+79219182293">
+                                +7 (921) 918-22-93
+                            </PhoneLink>
+                        </ContactLinks>
+                        </ContactContainer>
+                    </ContactListContainer>
                 </InfoText>
             </InfoCard>
         </HomePage>

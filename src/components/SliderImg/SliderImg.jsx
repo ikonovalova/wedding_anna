@@ -1,29 +1,37 @@
 import React, {useRef, useState} from 'react';
 import * as S from './styles';
 
-import photo1 from '../../assets/sliderAbout/a1.png';
+import photoMain from '../../assets/sliderAbout/main.jpg';
+import photoGraduation from '../../assets/sliderAbout/graduation2024.png';
+import photoFirstNewYear from '../../assets/sliderAbout/first-new-year2015.jpg';
+import photoFirstSkiing from '../../assets/sliderAbout/first-skiing-2017.jpg';
+import photoGreenhouse from '../../assets/sliderAbout/a1.jpg';
 import photo2 from '../../assets/sliderAbout/a2.png';
 import photo3 from '../../assets/sliderAbout/a3.png';
 import photo4 from '../../assets/sliderAbout/a4.png';
 // import photo5 from '../../assets/sliderAbout/about5.jpg';
-import photo5 from '../../assets/sliderAbout/a1.png';
-import photo6 from '../../assets/sliderAbout/a1.png';
-import photo7 from '../../assets/sliderAbout/a1.png';
-import photo8 from '../../assets/sliderAbout/a1.png';
-import photo9 from '../../assets/sliderAbout/a1.png';
+// import photo5 from '../../assets/sliderAbout/a1.png';
+// import photo6 from '../../assets/sliderAbout/a1.png';
+// import photo7 from '../../assets/sliderAbout/a1.png';
+// import photo8 from '../../assets/sliderAbout/a1.png';
+// import photo9 from '../../assets/sliderAbout/a1.png';
 
 const SliderImg = () => {
 
     const photos = [
-        { src: photo1, date: '15.05.2020' },
-        { src: photo2 },
-        { src: photo3, date: '12.02.2022' },
+        { src: photoMain },
+        { src: photoFirstNewYear, date: '31 декабря 2015' },
+        { src: photoFirstSkiing, date: '17 февраля 2017' },
+        { src: photoGreenhouse, date: '11 апреля 2021' },
+        { src: photoGraduation, date: '4 июня 2024' },
         { src: photo4 },
-        { src: photo5, date: '15.05.2020' },
-        { src: photo6 },
-        { src: photo7, date: '15.05.2020' },
-        { src: photo8, date: '15.05.2020' },
-        { src: photo9, date: '15.05.2020' },
+        { src: photo2 },
+        { src: photo3, date: '21 марта 2025' },
+        // { src: photo5, date: '15.05.2020' },
+        // { src: photo6 },
+        // { src: photo7, date: '15.05.2020' },
+        // { src: photo8, date: '15.05.2020' },
+        // { src: photo9, date: '15.05.2020' },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

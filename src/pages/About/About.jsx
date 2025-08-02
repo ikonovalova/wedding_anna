@@ -1,10 +1,13 @@
 import React from 'react';
 import * as S from './styles';
 import SliderImg from "../../components/SliderImg/SliderImg.jsx";
+import ourPhoto from '../../assets/mainAbout/main.jpg';
 
 const About = () => {
     return (
         <S.AboutPage>
+            <S.MainImage src={ourPhoto} alt="Анна и Степан" />
+
             <S.HeroSection>
                 <S.HeroText>
                     Мы — Анна и Степан, пара, которую объединяет любовь к приключениям,
@@ -15,8 +18,6 @@ const About = () => {
                     И вот уже 10 лет идем по жизни вместе.
                 </S.HeroText>
             </S.HeroSection>
-
-            <SliderImg />
 
             <S.ContentSection>
                 <S.Section>
@@ -49,6 +50,9 @@ const About = () => {
                         <p>Наш стиль: <S.Highlight>доверительный, помогающий, открытый</S.Highlight>. Любим вкусную еду (особенно острую), позитивные эмоции и дорогих нам людей.</p>
                     </S.TextBlock>
                 </S.Section>
+
+                <SliderImg />
+
 
                 <S.FinalNote>
                     Спасибо, что разделяете нашу радость — для нас важно, что вы будете рядом в этот день!
