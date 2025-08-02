@@ -12,7 +12,7 @@ export const HeroSection = styled.div`
     padding: 40px;
     background: linear-gradient(135deg, #f9f5f0 0%, #f0e6d9 100%);
     border-radius: 30px;
-    margin-top: 40px;
+    margin-top: 10px;
 
     @media (max-width: 768px) {
         padding: 30px 15px 40px;
@@ -123,4 +123,21 @@ export const fadeIn = `
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+`;
+
+export const MainImage = styled.img`
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;  
+  padding: 10px 0px 10px;
+  border-radius: 35%;  
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  
+
+   @media (max-width: 768px) {
+        width: 90%;
+        height: auto; 
+    }
 `;
