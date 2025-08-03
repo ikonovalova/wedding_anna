@@ -2,13 +2,13 @@ import React, {useRef, useState} from 'react';
 import * as S from './styles';
 
 import photoMain from '../../assets/sliderAbout/main.jpg';
-import photoGraduation from '../../assets/sliderAbout/graduation2024.png';
+import photoGraduation from '../../assets/sliderAbout/graduation2024.jpg';
 import photoFirstNewYear from '../../assets/sliderAbout/first-new-year2015.jpg';
 import photoFirstSkiing from '../../assets/sliderAbout/first-skiing-2017.jpg';
 import photoGreenhouse from '../../assets/sliderAbout/a1.jpg';
-import photo2 from '../../assets/sliderAbout/a2.png';
-import photo3 from '../../assets/sliderAbout/a3.png';
-import photo4 from '../../assets/sliderAbout/a4.png';
+import photo2 from '../../assets/sliderAbout/a2.jpg';
+import photo3 from '../../assets/sliderAbout/a3.jpg';
+import photo4 from '../../assets/sliderAbout/a4.jpg';
 // import photo5 from '../../assets/sliderAbout/about5.jpg';
 // import photo5 from '../../assets/sliderAbout/a1.png';
 // import photo6 from '../../assets/sliderAbout/a1.png';
