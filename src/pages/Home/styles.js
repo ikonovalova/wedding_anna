@@ -133,8 +133,22 @@ iframe {
 }
 `;
 
+export const ContactListContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+          gap: 10px;
+    }
+    
+`;
+
 export const ContactContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 15px;
   margin-top: 8px;
@@ -146,11 +160,16 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactPhoto = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #d4a373;
+
+    @media (max-width: 768px) {
+        width: 150px;
+        height: 150px;
+    }
 `;
 
 export const ContactLinks = styled.div`
@@ -218,6 +237,23 @@ export const PhoneLink = styled.a`
     background-repeat: no-repeat;
     margin-right: 8px;
   }
+`;
+
+export const DressCodeImage = styled.img`
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;  
+  padding: 10px 0px 10px;
+  border-radius: 5%;  
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  
+
+   @media (max-width: 768px) {
+        width: 90%;
+        height: auto; 
+    }
 `;
 
 // const InfoText = styled.p`
