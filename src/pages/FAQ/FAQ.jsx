@@ -23,16 +23,18 @@ const Faq = () => {
                         но мы не знаем их.
                     </AnswerText>
                     <AnswerSection>
-                        <AnswerTitle>Варианты размещения:</AnswerTitle>
+                        <AnswerTitle>Некоторые варианты размещения:</AnswerTitle>
                         <AnswerText>
-                            Вариант размещения в центре СПб:
-                            //<AnswerLink href="~">ссылка</AnswerLink>
+                            Вариант размещения в центре СПб:{' '}
+                            <AnswerLink target="_blank" href="https://level.travel/hotels/9092428-Otel_Aleksandriya?start_date=2025-09-04&nights=4&search_type=hotel&adults=2&from=any-RU">
+                                Отель Александрия
+                            </AnswerLink>
                         </AnswerText>
                         <AnswerText>
                             Вариант размещения за городом около свадебной площадки (5 мин на машине):
-                            Парк Шишкинъ{' '}
-                            <AnswerLink href="https://xn--80aqagbtij7eb.xn--p1ai/house">
-                                перейти на сайт
+                            {' '}
+                            <AnswerLink target="_blank" href="https://xn--80aqagbtij7eb.xn--p1ai/house">
+                                 Парк Шишкинъ
                             </AnswerLink>
                         </AnswerText>
                     </AnswerSection>
@@ -91,7 +93,7 @@ const Faq = () => {
                     <AnswerSection>
                         <AnswerTitle>Свадебное мероприятие:</AnswerTitle>
                         <AnswerText mb="10px">
-                            Мы хотим вас видеть красивыми. Цветовая гамма: бежевый, коричневый, черный, белый.
+                            Мы хотим вас видеть красивыми. Цветовая гамма: бежевый, коричневый, черный.
                         </AnswerText>
                         <AnswerText>
                             Подробнее на главной странице: <AnswerLink href="#">тык ССЫЛКа</AnswerLink>

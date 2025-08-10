@@ -9,12 +9,6 @@ import photoGreenhouse from '../../assets/sliderAbout/a1.jpg';
 import photo2 from '../../assets/sliderAbout/a2.jpg';
 import photo3 from '../../assets/sliderAbout/a3.jpg';
 import photo4 from '../../assets/sliderAbout/a4.jpg';
-// import photo5 from '../../assets/sliderAbout/about5.jpg';
-// import photo5 from '../../assets/sliderAbout/a1.png';
-// import photo6 from '../../assets/sliderAbout/a1.png';
-// import photo7 from '../../assets/sliderAbout/a1.png';
-// import photo8 from '../../assets/sliderAbout/a1.png';
-// import photo9 from '../../assets/sliderAbout/a1.png';
 
 const SliderImg = () => {
 
@@ -27,11 +21,6 @@ const SliderImg = () => {
         { src: photo4 },
         { src: photo2 },
         { src: photo3, date: '21 марта 2025' },
-        // { src: photo5, date: '15.05.2020' },
-        // { src: photo6 },
-        // { src: photo7, date: '15.05.2020' },
-        // { src: photo8, date: '15.05.2020' },
-        // { src: photo9, date: '15.05.2020' },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

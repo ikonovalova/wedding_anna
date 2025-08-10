@@ -13,7 +13,7 @@ import {
 } from './styles';
 import coordinatorPhoto from '../../assets/coord_small.jpg';
 import toastmasterPhoto from '../../assets/toastmaster.jpg';
-import dresscodePhoto from '../../assets/dresscode.jpg';
+import dresscodePhoto from '../../assets/dresscode2.jpg';
 
 
 const Home = () => {
