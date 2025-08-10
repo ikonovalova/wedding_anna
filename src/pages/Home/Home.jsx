@@ -29,6 +29,7 @@ const Home = () => {
                 <InfoText>
                     <strong>Дата:</strong> 05.09.2025<br />
                     <strong>Время:</strong> 19:00<br />
+                    <strong>Начало церемонии:</strong> 19:20<br />
                     <strong>Место:</strong> Дворец бракосочетания №1<br />
                     <strong>Адрес:</strong> Санкт-Петербург, Английская наб., 28
                 </InfoText>
