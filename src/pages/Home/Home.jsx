@@ -8,6 +8,7 @@ import {
     InfoCard,
     InfoTitle,
     InfoText,
+    AnswerLink,
     MapContainer, ContactPhoto, ContactLinks, TelegramLink, TelegramIcon, PhoneLink, ContactContainer, ContactListContainer,
     DressCodeImage
 } from './styles';
@@ -68,10 +69,20 @@ const Home = () => {
                 </MapContainer>
             </InfoCard>
 
+             <InfoCard>
+                <InfoTitle>Опрос гостей о свадебном мероприятии</InfoTitle>
+                <InfoText>Мы хотели бы знать, придете ли вы, как вы собираетесь туда добраться, что будете есть и какую музыку хотели бы послушать. 
+                    Поэтому, пожалуйста, заполните{' '}   
+                     <AnswerLink target="_blank" href="https://forms.gle/QSck25M56V4X37j6A">
+                                                     анкету
+                                                 </AnswerLink>.
+                </InfoText>
+            </InfoCard>
+
             <InfoCard>
                 <InfoTitle>Дресс-код</InfoTitle>
                 <InfoText>Наш праздник пройдёт в духе уютной осени, и мы будем безумно рады, если вы поддержите эту атмосферу в своих нарядах. Дресс-код: нарядная одежда в тёплой палитре — бежевый, коричневый, тёмно-шоколадный, чёрный.
-                     <DressCodeImage src={dresscodePhoto} alt="Координатор" />
+                     <DressCodeImage src={dresscodePhoto} alt="Дресс-код" />
                 </InfoText>
             </InfoCard>
 

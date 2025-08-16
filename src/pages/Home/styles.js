@@ -122,6 +122,16 @@ strong {
 }
 `;
 
+export const AnswerLink = styled.a`
+  color: #d4a373;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export const MapContainer = styled.div`
                             margin-top: 20px;
 border-radius: 8px;
